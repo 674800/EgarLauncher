@@ -9,6 +9,7 @@ import com.egar.launcher.View.DraggableGridViewPager;
 import com.egar.launcher.presen.SettingsObserver;
 
 public class Launcher extends BaseActivity implements ISettings {
+    private String TAG = "LC_EgarLauncher";
     private DraggableGridViewPager mDraggableGridViewPager;
     private LinearLayout mLinearLayout;
     @Override
@@ -33,6 +34,6 @@ public class Launcher extends BaseActivity implements ISettings {
 
     @Override
     public void onThemeChange() {
-        Log.e("change","change");
+        Log.e(TAG,"change");
     }
 }
